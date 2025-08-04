@@ -19,9 +19,9 @@ public class GradeCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.print("점수를 입력하세요 >> ");
         int score = scanner.nextInt();
-        System.out.println("점수: " + score + "점");
+        System.out.println("점수: " + score);
 
-        String grade; // 변수 선언
+        String grade;
         if (score >= 90) {
             grade = "A";
         } else if (score >= 80) {
@@ -32,6 +32,7 @@ public class GradeCalculator {
             grade = "D";
         }
         System.out.println("등급: " + grade);
+
         if (grade.equals("A") || grade.equals("B")) {
             System.out.println("장학금 대상입니다!");
         } else {

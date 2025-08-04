@@ -27,6 +27,7 @@ public class ScannerStudy {
 
         // nextInt가 처리하지 못한 엔터키(\n)가 아직 남아 있어서
         // 그 후에 오는 nextLine()이 엔터키를 읽고 바로 종료
+
         System.out.println("이름을 입력하세요 >> ");
         String name = scanner.nextLine();
         System.out.println("이름: " + name);

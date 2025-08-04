@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class ElseIf {
     public static void main(String[] args) {
         /*
-        if ~ else if * n ~ else
+        if ~ else if * n번 ~ else
         하나의 조건이 만족되면, 나머지 조건들은 검사하지 않음
         오직 하나의 코드블럭만 실행
         (코드는 위에서 아래로 읽는다.
-        > 아무리 아래에 참인 else if조건이 있어도
+        > 아무리 아래에 참인 else if 조건이 있어도
         위에서 참인 else if가 있으면 무시 됨.)
         */
 
@@ -41,5 +41,6 @@ public class ElseIf {
         // 권한, 역할 같은 논리적인 데이터에서도
         // 큰 것부터 작은 순으로 혹은 작은 것부터 큰 순으로 작성
 
+        scanner.close(); // 스캐너 종료(메모리에서 삭제 시켜준다)
     }
 }

@@ -7,11 +7,11 @@ public class If {
             // 조건이 참일 때 (true일 때) 실행되는 코드
         }
         */
-        int height = 100;
+        int height = 130;
         boolean isAdult = false; // 성인인가? false
 
-        // 최종적으로 if(boolean 데이터)
-        if (height >= 120 && !isAdult) {
+        // 최종적으로 if( boolean 데이터 )
+        if (height >= 120 && !isAdult) { // 120넘고 성인이 아닌 사람만 출입
             System.out.println("탑승 가능합니다!");
         }
 

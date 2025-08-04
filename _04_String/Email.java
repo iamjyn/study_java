@@ -29,14 +29,16 @@ public class Email {
 
         // 문제2) 주민번호
         String pn = "990226-1234567";
-        // 1. 주민번호 앞자리만 추출
+        // "-" dashIndex를 먼저 구해주세요
         int dashIndex = pn.indexOf("-");
+
+        // 1. 주민번호 앞자리만 추출
         String firstPn = pn.substring(0, dashIndex);
         System.out.println("앞자리: " + firstPn);
 
         // 2. 생년월일 추출(숫자)
         String birthDate = firstPn.substring(2);
-        System.out.println("생년월일: " + birthDate);
+        System.out.println("생일: " + birthDate);
 
         // 3. 성별코드(뒷자리 첫번째) 추출
         String genderCode = pn.substring(dashIndex + 1, dashIndex + 2);
