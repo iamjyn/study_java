@@ -55,5 +55,13 @@ public class MultiArray {
             System.out.println();
         }
 
+        // 위와 동일한 코드
+        for (int i = 0; i < seats.length; i++) { // 바깥 서랍 길이만큼 반복
+            for (int j = 0; j < seats[i].length; j++) { // 내부 서랍 길이만큼 반복
+                System.out.print(seats[i][j] + " ");
+            }
+            System.out.println();
+        }
+
     }
 }

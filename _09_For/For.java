@@ -4,15 +4,15 @@ public class For {
     public static void main(String[] args) {
         // for 반복문
         /*
-            for(초기실-변수초기화; 조건식; 증감식;) {
+            for(초기식-변수초기화; 조건식; 증감식;) {
                 반복될 코드
             }
         */
         
         // int i = 0; (초기식: for문 내에서 쓸 변수)
-        // i++ (증감식: 매 반복마다 변수를 조작)
         // i < 10 (조건식: 조건식이 false가 될 때까지 반복)
-        
+        // i++ (증감식: 매 반복마다 변수를 조작)
+
         for (int i = 1; i < 6; i += 2) {
             // i는 for문 중괄호 내에서만 살아있음
             System.out.println(i + "번째 반복");
@@ -24,6 +24,7 @@ public class For {
         } // 자격증 시험에서 좋아한다.
 
         System.out.println(a); // 6
+
         for (; a < 10; a++) {
             System.out.println("두 번째 반복: " + a);
         }
@@ -57,22 +58,26 @@ public class For {
 
         // 실습) 1~100 중에 짝수합, 홀수합을 따로 구해서 출력
         int evenSum = 0; // 짝수누적합
-        for (int i = 2; i <= 100; i += 2) {
-            evenSum += i;
-        }
-        System.out.println("짝수누적합: " + evenSum);
+//        for (int i = 2; i <= 100; i += 2) {
+//            evenSum += i;
+//        }
+//        System.out.println("짝수누적합: " + evenSum);
 
         int oddSum = 0; // 홀수누적합
-        for (int i = 1; i <= 100; i +=2) {
-            oddSum += i;
-        }
-        System.out.println("홀수누적합: " + oddSum);
+//        for (int i = 1; i <= 100; i +=2) {
+//            oddSum += i;
+//        }
+//        System.out.println("홀수누적합: " + oddSum);
 
         for (int i = 1; i <= 100; i++) {
             if(i % 2 == 0) {
-
+                evenSum += i;
+            } else {
+                oddSum += i;
             }
         }
+        System.out.println(oddSum);
+        System.out.println(evenSum);
 
     }
 }
