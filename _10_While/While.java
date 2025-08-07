@@ -31,7 +31,7 @@ public class While {
         // 1이상 10미만 중 랜덤 정수를 만들어서 반환
         int num = random.nextInt(1, 10);
         int inputNum = 0; // 스캐너를 통해 숫자를 대입받을 변수
-        // 랜덤정수를 맞출 때까지 while문을 반복
+        // 랜덤정수를 맞출 때까지 while 문을 반복
         while (num != inputNum) {
             System.out.println("1~9사이 숫자 입력 >> ");
             inputNum = scanner.nextInt();

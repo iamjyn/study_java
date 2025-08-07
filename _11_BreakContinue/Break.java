@@ -16,7 +16,7 @@ public class Break {
             if (i == max) {
                 System.out.println("재료소진.. 마갑입니다.");
                 break; // 10번째 반복에서 break 읽고 탈출
-                // 가까운 반복문 중괄호 한번만 탈출
+                // 가까운 반복문 중괄호 한번만 탈출 / 이중 반복문일 때(전체탈출 아님)
             }
         }
 

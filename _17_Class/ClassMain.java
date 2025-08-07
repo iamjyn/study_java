@@ -8,15 +8,17 @@ public class ClassMain {
         데이터 셋트를 정의해 주는 것이 클래스
         */
 
-        // Student 타입(String 1개, int 3개)의 변수 선언
+        // Student 타입 변수 선언 -> stack에 student 라는 변수 자리를 만들었다.
+        // 연결된 heap 주소가 없으니 저장하고 있는 값은 null
         Student student;
-        // heap에 빈 메모리공간(객체) 생성
+        // new 연산을 하는 순간 heap에 빈 메모리공간(객체, 인스턴스) (String 1개, int 3개) 생성
+        // heap 주소를 student에 대입 -> stack과 heap이 연결됨
         student = new Student();
-        // Student 클래스 객체를 생성 -> heap에 빈 메모리공간 생성
-        // student1에 heap 주소를 대입
 
-        // student: heap의 주소
-        // heap주소.name : Student 객체의 String칸을 의미
+        // student: heap의 주소(0x0010)
+        // student.name -> 0x0010에 있는 name 자리
+        // student.name = "홍길동" -> 0x0010의 name자리에 "홍길동" 데이터를 저장하겠다.
+
         student.name = "홍길동";
         student.korean = 90;
         student.english = 90;
@@ -28,16 +30,18 @@ public class ClassMain {
         student: null(주소없음) -> 0x1000(new로 생성하여 대입)
 
         heap
-        0x1000 : Stuent 객체 정보
+        0x1000 : Student 객체 정보
         0x1010 : 홍길동 문자열 주소
         0x1014 : korean = 90
         0x1018 : english = 90
         0x1022 : math = 90
+        student.korean -> heap에 있는 0x1014 주소로 가보세요
+        student.english -> heap에 있는 0x1018 주소로 가보세요
+        student.math -> heap에 있는 0x1022 주소로 가보세요
         */
 
         // null이란?
         // 참조형 변수가 아무런 객체와도 연결되지 않은 상태(주소값이 없는 상태)
-
         // 객체와 인스턴스: 객체와 인스턴스는 같은 말이다.
 
         /*
