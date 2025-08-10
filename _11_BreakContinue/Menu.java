@@ -20,7 +20,7 @@ public class Menu {
             System.out.println("2. 입금");
             System.out.println("3. 출금");
             System.out.println("4. 종료");
-            System.out.print("매뉴를 선택하세요(1~4) >> ");
+            System.out.print("메뉴를 선택하세요(1~4) >> ");
 
             int choice = scanner.nextInt();
             if (choice == 1) {
@@ -56,25 +56,23 @@ public class Menu {
                     System.out.println("올바른 금액을 입력하세요");
                     continue;
                 }
-
                 if (money > balance) {
                     System.out.println("잔액이 부족합니다");
                     continue;
                 }
-
-                // 기존 방식
                 balance -= money;
                 System.out.println("출금완료");
 
-                if (money > 0 && money <= balance) {
-                    balance -= money;
-                    System.out.println(money + "원 출금완료");
-                } else if (money > balance) {
-                    System.out.println("잔액이 부족합니다");
-                } else if (money > 0) {
-                    System.out.println("올바름 금액을 입력하세요");
-                }
-                System.out.println("현재잔액: " + balance + "원\n");
+                // 기존 방식
+//                if (money > 0 && money <= balance) {
+//                    balance -= money;
+//                    System.out.println(money + "원 출금완료");
+//                } else if (money > balance) {
+//                    System.out.println("잔액이 부족합니다");
+//                } else if (money < 0) {
+//                    System.out.println("올바름 금액을 입력하세요");
+//                }
+//                System.out.println("현재잔액: " + balance + "원\n");
             } else {
                 if (choice == 4) {
                     System.out.println("시스템 종료");
@@ -83,7 +81,6 @@ public class Menu {
                 }
             }
         }
-
 
     }
 }

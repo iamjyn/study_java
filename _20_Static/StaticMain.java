@@ -18,5 +18,14 @@ public class StaticMain {
         // StaticData 클래스에서 하나만 존재하며 모든 인스턴스가 공유
         // 생성자가 호출될 때 마다 0 -> 1 -> 2 -> 3 증가
 
+        // public static void main(String[] args) {}
+        // public -> 누구나 접근 가능하다 -> JVM이 호출해야하니까
+        // static -> 객체 생성 없이 호출 가능 -> JVM이 프로그램실행시 호출해야 하니까
+        // void -> 실행 역할 밖에 없음 (리턴 없음)
+        // String[] args: 자바 프로그램 외부로부터 전달받은 데이터를 담아둔 매개변수
+
+        for (String arg: args) {
+            System.out.println(arg);
+        }
     }
 }
