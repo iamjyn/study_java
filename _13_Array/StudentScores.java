@@ -15,28 +15,29 @@ public class StudentScores {
         for (int score : scores) {
             totalSum += score;
         }
-        System.out.println("1. 총합: " + totalSum + "점");
-
         double average = (double) totalSum / scores.length;
-        System.out.println("2. 평균 점수: " + average + "점");
+
+        System.out.println("1. 총합: " + totalSum);
+        System.out.println("2. 평균: " + average);
 
         // 반복문을 순회하면서
-        // 평균 점수보다 큰 점수를 발견하면 +1 카우느
+        // 평균점수보다 큰 점수를 발견하면 +1 카운트
+
         int overAvgCount = 0;
         for (int score : scores) {
-            if(score >= average) {
+            if (score > average) {
                 overAvgCount++;
             }
         }
-        System.out.println("3. 평균 이상인 점수의 갯수: " + overAvgCount + "개");
+        System.out.println("3. 평균 이상 학생 수: " + overAvgCount);
 
         int maxScore = scores[0]; // 0번으로 초기화
-        for (int i = 1; i < scores.length; i++) {
+        for (int i = 1; i < scores.length; i++){
             if (scores[i] > maxScore) {
                 maxScore = scores[i];
             }
         }
-        System.out.println("4. 최고 점수: " + maxScore + "점");
-
+        System.out.println("4. 최고 점수: " + maxScore);
     }
+
 }

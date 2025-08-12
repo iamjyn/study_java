@@ -18,7 +18,6 @@ public class ClassMain {
         // student: heap의 주소(0x0010)
         // student.name -> 0x0010에 있는 name 자리
         // student.name = "홍길동" -> 0x0010의 name자리에 "홍길동" 데이터를 저장하겠다.
-
         student.name = "홍길동";
         student.korean = 90;
         student.english = 90;
@@ -29,7 +28,7 @@ public class ClassMain {
         --stack(main)--
         student: null(주소없음) -> 0x1000(new로 생성하여 대입)
 
-        heap
+        --heap--
         0x1000 : Student 객체 정보
         0x1010 : 홍길동 문자열 주소
         0x1014 : korean = 90
@@ -42,8 +41,8 @@ public class ClassMain {
 
         // null이란?
         // 참조형 변수가 아무런 객체와도 연결되지 않은 상태(주소값이 없는 상태)
-        // 객체와 인스턴스: 객체와 인스턴스는 같은 말이다.
 
+        // 객체와 인스턴스: 객체와 인스턴스는 같은 말이다.
         /*
         student는 객체다(o)
         - 인스턴스: 실제 프로그램 구동시에 생성된 객체(관점2)

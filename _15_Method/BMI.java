@@ -13,34 +13,29 @@ public class BMI {
     25.0~29.9 과체중
     30.0 이상 비만
     */
+
     public static double calcBMI(double height, double weight) {
         double meterHeight = height / 100.0;
         return weight / (meterHeight * meterHeight);
     }
 
-    public static String getBMIStatus(double bmi) {
-        String status;
-        if (18.5 > bmi) {
-            status = "저체중";
-        } else if (24.9 >= bmi) {
-            status = "정상";
-        } else if (29.9 >= bmi) {
-            status = "과체중";
+    public static String getBMIStatus(double bmi){
+        if (bmi < 18.5) {
+            return "저체중";
+        } else if (bmi <= 24.9) {
+            return "정상체중";
+        } else if (bmi <= 29.9) {
+            return "과체중";
         } else {
-            status = "비만";
+            return "비만";
         }
-        return status;
     }
 
     public static void main(String[] args) {
-        System.out.println("홍길동님의 건강정보");
-        System.out.println("BMI : " + calcBMI(175.0, 70.0));
-        System.out.println("BMI 상태 : " + getBMIStatus(calcBMI(175.0, 70.0)));
-
-        double bmi = calcBMI(175.0, 70.0);
-        System.out.println("BMI : " + bmi);
-
-        String status = getBMIStatus(bmi);
-        System.out.println("BMI 상태 : " + status);
+        System.out.println("-홍길동님의 건강정보-");
+        double bmi = calcBMI(175, 70);
+        System.out.println("1. BMI: " + bmi);
+        System.out.println("2. 상태: " + getBMIStatus(bmi));
     }
+
 }

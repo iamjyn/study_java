@@ -16,7 +16,7 @@ public class ConstantMain {
             // 후위증가: 대입먼저 하고 1증가
         }
 
-        int price = 100000;
+        int price = 100000; // 사용자가 입력한 값
         double totalPrice;
 
         // 매직넘버들을 상수화하여서 리팩토링 해주세요
@@ -33,8 +33,6 @@ public class ConstantMain {
         // 매직넘버, 매직스트링
         // 나중에 코드를 내가 봤을 때, "이 숫자, 이 문자열은 무슨 의미지?" 궁금해지면
         // 매직넘버, 매직스트링이다.
-
-
 
     }
 }

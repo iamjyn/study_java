@@ -15,7 +15,7 @@ public class Parameter {
     public static void main(String[] args) {
         int num = 10;
         System.out.println("changeNum 호출 전: " + num); // 10
-        System.out.println(num);
+        changeNum(num);
         System.out.println("changeNum 호출 후: " + num); // 10
 
         // 자바에서 변수에 변수를 대입하는 경우
@@ -24,7 +24,7 @@ public class Parameter {
         --stack(main)--
         num: 10
 
-        --stack(changeNum)--
+        --stack(changeNum)-- // 함수마다 stack 구역이 존재함
         number: 10 -> 12
         */
 

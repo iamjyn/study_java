@@ -7,23 +7,23 @@ public class Phone {
     void turnOn() {
         if (battery >= 10) {
             isPowerOn = true;
-            System.out.println("휴대폰 전원이 켜집니다.\n");
+            System.out.println("전원을 켭니다");
         } else {
-            System.out.println("배터리가 부족합니다.(최소 10)\n");
+            System.out.println("배터리가 부족합니다.(최소 10)");
         }
     }
 
     void turnOff() {
         isPowerOn = false;
-        System.out.println("휴대폰 전원이 꺼집니다.\n");
+        System.out.println("전원을 끕니다");
     }
 
     void call() {
         if (isPowerOn) {
-            System.out.println("통화 중입니다.\n");
+            System.out.println("전화를 겁니다");
             battery -= 10;
-            } else {
-            System.out.println("전원을 먼저 켜주세요.\n");
+        } else {
+            System.out.println("전원을 먼저 켜주세요");
         }
     }
 
@@ -31,16 +31,16 @@ public class Phone {
         battery += 20;
         if (battery > 100) {
             battery = 100;
-            }
-        System.out.println("충전이 완료되었습니다.\n> 배터리 잔량: " + battery + "\n");
+        }
+        System.out.println("배터리 충전완료. 배터리: " + battery);
     }
 
     void showStatus() {
-        System.out.println("[배터리 상태 확인]");
         if (isPowerOn) {
-            System.out.println("전원이 켜져있습니다.\n> 배터리 잔량: " + battery + "\n");
+            System.out.println("전원 on, 배터리: " + battery);
         } else {
-            System.out.println("전원이 꺼져있습니다.");
+            System.out.println("전원 off");
         }
     }
+
 }

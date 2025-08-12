@@ -22,6 +22,7 @@ public class MultiArray {
         // 데이터 접근
         // seats의 seatA에 접근
         String[] aRow = seats[0]; // seatA
+
         // seats의 seatA의 "A3"
         String a3 = seats[0][2]; // seatA "A3"
         a3 = aRow[2];

@@ -3,7 +3,7 @@ package com.study._15_Method;
 import java.util.Scanner;
 
 public class Return {
-    // [접근제한자] [static 유무] [리턴 타입] [매개변수...]() {}
+    // [접근제한자] [static 유무] [리턴 타입] [함수이름](매개변수...) {}
     // 리턴값이 존재한다면 void 대신 반환할 데이터의 자료형을 명시한다.
     public static int addNumber(int num1, int num2) {
         int result = num1 + num2;
@@ -12,15 +12,10 @@ public class Return {
     }
 
     public static String addNim(String name) {
-        String result = name + "님";
-
+        // String result = name + "님";
+        // return result;
         return name + "님";
     }
-
-    // 위랑 같음
-//    public static String addNim(String name) {
-//        return name + "님";
-//    }
 
     public static Scanner getScanner() {
         Scanner scanner = new Scanner(System.in);

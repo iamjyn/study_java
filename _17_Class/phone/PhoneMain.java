@@ -4,7 +4,7 @@ public class PhoneMain {
     public static void main(String[] args) {
         /*
         실습)
-        1. Phone 클래스를 작성해 주세요
+        1. Phone 클래스를 작성해 주세요 -> phone 패키지 내부에 생성
         battery (int) : 배터리 잔량
         isPowerOn (boolean) : 전원 상태
 
@@ -18,15 +18,17 @@ public class PhoneMain {
         */
 
         Phone phone = new Phone();
-        phone.call();
 
+        phone.call();
         phone.charge();
         phone.turnOn();
-        phone.call();
-        phone.charge();
-        phone.showStatus();
 
         phone.call();
+        phone.charge();
+
+        phone.showStatus();
+        phone.call();
+
         phone.turnOff();
         phone.showStatus();
 

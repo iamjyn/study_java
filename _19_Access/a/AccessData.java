@@ -2,7 +2,7 @@ package com.study._19_Access.a;
 
 public class AccessData {
     /*
-    접근제한자: 접근을 외부로부터 제한하는 제어자
+    접근제한자: 접근(.)을 외부로부터 제한하는 제어자
     클래스, 메서드, 필드에 정의할 수 있음
 
     -> 접근제한자 종류
@@ -42,6 +42,7 @@ public class AccessData {
     }
 
     /*
+    // 프라이빗 메소드
     AccessData data = new AcessData();
     data.privateMethod() (사용x)
     -> 클래스 내부에서 코드를 재사용할 때
@@ -54,7 +55,6 @@ public class AccessData {
         privateMethod(); // private -> 같은 클래스 내부에서만 호출 가능
         this.privateField = number;
         System.out.println("프라이빗 필드 값: " + privateField);
-
     }
 
 }

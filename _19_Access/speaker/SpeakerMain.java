@@ -11,8 +11,8 @@ public class SpeakerMain {
         Speaker speaker = new Speaker(-100);
         speaker.volumeDown();
         speaker.volumeUp();
-        // 외부로 받은 데이터가 이상해도, 유효한 데이터로 안전하게 저장가능
-        speaker.setVolume(1000);
+        // 외부로 받은 데이터가 이상해도, 유효한 데이터로 안전하게 저장 가능
+        speaker.setVolume(volume);
         speaker.volumeUp();
     }
 }

@@ -18,7 +18,7 @@ public class MonthlySales {
         for (int i = 1; i < monthlySales.length; i++) {
             if (monthlySales[i] > maxSales) { // i번째 매출이 최고 매출보다 크면
                 maxSales = monthlySales[i]; // 최고 매출을 업데이트 하라
-                maxIndex = i; // 최고 매출이 저장되어 있는 인덱스로 업데이트 하라
+                maxIndex = i; // 최고 매출이 저장되어 있는 인덱스도 업데이트 하라
             }
         }
         System.out.println("최고 매출: " + maxSales + "만원\n해당 월: " + months[maxIndex]);

@@ -13,11 +13,11 @@ public class FinalStudent {
     }
 
     // final 필드는 setter 정의 불가능
-//    public void setName(String name) {
-//        this.name = name;
-//    }
+    // public void setName(String name) {
+    // this.name = name;
+    // }
 
-    // 변경이 아니기 때문에 final이라도 getter는 정의 가능
+    // 변경이 아니기 때문에 final 이라도 getter는 정의 가능
     public String getName() {
         return this.name;
     }

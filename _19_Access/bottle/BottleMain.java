@@ -16,13 +16,14 @@ public class BottleMain {
         */
 
         Bottle bottle = new Bottle(0);
+
         bottle.drink(100);
         bottle.drink(-100);
         bottle.fill(900);
         bottle.fill(-200);
         bottle.fill(200);
 
-        System.out.println(bottle.getCurrentWater());
+        System.out.println("현재 물의 양: " + bottle.getCurrentWater());
 
     }
 }

@@ -31,7 +31,6 @@ public class Student {
         student1.name = "홍길동"
         sout(this.name) -> "홍길동"이 콘솔에 출력됨
         this -> 호출한 객체 자기 자신의 주소값
-
         */
     }
 
@@ -52,15 +51,14 @@ public class Student {
         // this() != this. 아예 상관이 없는 문법
         // this() : 같은 이름의 생성자 (오버로딩 된) 호출
         // Student(String name, int kor, int english, int math)
-        // this() : 제약사항: 생성자의 가장 첫 줄에 적어 줘야한다.
+        // this()의 제약사항: 생성자의 가장 첫 줄에 적어 줘야한다.
 
         System.out.println("이름, 국어점수 생성자 호출!");
     }
 
+    // 아무것도 없는 생성자
     public Student() {
 
     }
-
-
 
 }

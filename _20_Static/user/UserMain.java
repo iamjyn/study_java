@@ -7,10 +7,9 @@ public class UserMain {
         System.out.println(user.getName()); // 평문
         System.out.println(user.getPersonalNumber()); // 평문
 
-        System.out.println(User.getMaskedName(user.getName())); // 마스킹 이름
-        System.out.println(User.getMaskedPersonalNumber(user.getPersonalNumber())); // 마스킹 주민번호
-
-        System.out.println("-".repeat(30));
+        // 클래스로 접근 -> getName
+        // System.out.println(User.getMaskedName(user.getName())); // 마스킹 이름
+        // System.out.println(User.getMaskedPersonalNumber(user.getPersonalNumber())); // 마스킹 주민번호
 
         // -> 화면에 보여질 User로 바꿔주자
         String name = User.getMaskedName(user.getName());
@@ -31,7 +30,6 @@ public class UserMain {
 //        System.out.println(user3.getName());
 
         System.out.println(user.toMaskedUser().getName());
-
     }
 
 }

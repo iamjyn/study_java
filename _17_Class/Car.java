@@ -1,14 +1,14 @@
 package com.study._17_Class;
 
 public class Car {
-    // 필드(값), 멤버변수, 속성, 상태
+    // 필드(값,변수), 멤버변수, 속성, 상태
     int speed;
     boolean isEngineOn;
 
     // 초기값
     /*
     참조자료형 -> 초기화 안하면 null
-    정수들 int, long -> 0
+    정수들 int, long.. -> 0
     소수들 double -> 0.0
     boolean -> false
     */
@@ -36,6 +36,7 @@ public class Car {
         }
     }
 
+    // 속도 올리는 메서드
     void accelerate() {
         // 객체의 상태에 따라
         // 유효성을 검증이 가능하다
