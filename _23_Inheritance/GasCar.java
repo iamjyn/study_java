@@ -17,7 +17,7 @@ public class GasCar extends Car {
     /*
     메서드 영역에는 Car에도 move()가 있고, GasCar에도 move()가 별도로 존재
     JVM이 객체가 메서드를 호출하면 자식클래스 먼저 탐색 -> 없으면 부모클래스 탐색
-    * JVM은 실제 객체 타입 기준으로 메서드를 호출
+    *JVM은 실제 객체 타입 기준으로 메서드를 호출
     Car car = new GasCar(); 실제 객체 타입? 우변 기준: GasCar를 말함
 
     규칙:

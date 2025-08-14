@@ -41,10 +41,4 @@ public class Student {
         System.out.println("학교: " + schoolName);
     }
 
-
-
-
-
-
-
 }

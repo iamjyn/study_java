@@ -13,10 +13,9 @@ public class Service {
         }
 
         // 양방향 관계 설정(서로 주소 넘겨줌)
-        book.setlibrary(library);
+        book.setLibrary(library);
         library.addBook(book);
 
     }
-
 
 }

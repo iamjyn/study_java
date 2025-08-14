@@ -21,7 +21,7 @@ public class Animal {
     }
 
     public void eat() {
-        System.out.println("밥을 먹습니다.");
+        System.out.println(name + "이 밥을 먹습니다.");
     }
 
     public void showInfo() {

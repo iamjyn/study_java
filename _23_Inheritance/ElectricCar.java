@@ -13,14 +13,14 @@ public class ElectricCar extends Car {
 
     부모 객체 생성시
     객체 -> [부모필드 정보]
-    // 1. 메모리상 구분되어 있지 않음 -> JVM이 구분해서 읽음
+    // 1. 메모리상 구분되어 있지 X -> JVM이 구분해서 읽음
     // 2. 부모필드의 private도 메모리에 올라간다.(JVM이 접근을 안함)
 
     [메서드 영역]
     메모리는 클래스별로 구분되어 있음
     -- 부모 클래스 --
     클래스에 대한 정보
-    클래스에 정의된 메서드들
+    클래스에 정의된 메서드들(시그니처)
     -- 자식 클래스 --
     클래스에 대한 정보
     클래스에 정의된 메서드들(시그니처)
@@ -44,7 +44,7 @@ public class ElectricCar extends Car {
     }
 
     public ElectricCar(String brand) {
-        super(brand); // Car(String brand) {} 호출
+        super(brand); // public Car(String brand) {} 호출
         // 생략시 기본생성자(super())가 호출되기 때문에
         // 매개변수가 있는 생성자는 super() 생략 불가능
         System.out.println("전기차 생성자 호출!");

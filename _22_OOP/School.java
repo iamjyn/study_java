@@ -39,21 +39,21 @@ public class School {
     // 학생이 -> 학교를 등록(x) 관련 코드는 작성하지 않는다!
     // student.setSchool(this) (x)
         /*
-        객체 지향 설계 5원칙(SOLID)
         School은 단순히 학생 목록만 관리
         학생의 상태(school 필드)는 School의 입장에선 알 바가 아니다(책임 권한이 없다)
 
+        객체 지향 설계 5원칙(SOLID)
         1. SRP(Single Responsibility Principle) - 단일책임원리
         : 각 클래스는 하나의 "책임"만 수행하도록 설계하라
-        * 책임: 개발자의 주관적 기준
+        *책임: 개발자의 주관적 기준
         */
 
     public String getName() {
         return name;
     }
 
-    // 특정 인덱스의 학생 객체를 반환하는 메서드
-    // 배열에 직접 접근하는 걸 막기 위해서
+    // 특정 인덱스의 학생객체를 반환하는 메서드
+    // 배열에 직접 접근하는 걸 막기 위해서, 메서드로 우회해서 가져가도록 (배열 주소를 노출하지 않기 위해서)
     public Student getStudent(int index) {
         if (index >= 0 && index < this.studentCount) {
             return students[index];

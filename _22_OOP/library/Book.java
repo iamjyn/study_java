@@ -7,6 +7,8 @@ public class Book {
     private String author; // 저자 이름
     private Library library; // 하나의 책은 하나의 도서관 소속
 
+    // Book 클래스
+    // 생성자
     // setLibrary
     // printBookInfo()
 
@@ -16,18 +18,20 @@ public class Book {
         this.author = author;
     }
 
-    // 책 -> 도서관 알게됨(주소)
-    public void setlibrary(Library library) {
+    // setLibrary
+    // 책 -> 도서관을 알게됨(메모리 연결)
+    public void setLibrary(Library library) {
         this.library = library;
     }
 
-    public void printInfo() {
-        System.out.println("제목: " + this.name);
+    // printBookInfo()
+    public void printBookInfo() {
+        System.out.println("책이름: " + this.name);
         System.out.println("저자: " + this.author);
         // 도서관은 우리가 정의한 객체 -> null 체크 필요하다
-        // this.library == null 경우를 체크 해줘야 한다.
+        // this.library == null 경우를 체크해줘야 한다.
         // null.getName() -> NullPointException
-        String libraryName = this.library == null ? "없음" : library.getName();
+        String libraryName = this.library == null ? "없음" : this.library.getName();
         System.out.println("도서관: " + libraryName);
     }
 

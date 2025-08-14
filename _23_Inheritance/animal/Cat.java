@@ -4,7 +4,7 @@ public class Cat extends Animal {
     private String color;
 
     public Cat() {
-        this.color = "회색";
+        this.color = "grey";
     }
 
     public Cat(String name, int age, String color) {
@@ -14,18 +14,16 @@ public class Cat extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("고양이가 사료를 먹습니다");
+        System.out.println("고양이가 밥을 먹습니다.");
     }
 
     @Override
     public void showInfo() {
-        System.out.println("이름: " + this.name);
-        System.out.println("나이: " + this.age + "살");
+        super.showInfo();
         System.out.println("털색: " + this.color);
     }
 
     public void meow() {
-        System.out.println(this.name + "가 야옹하고 웁니다.");
+        System.out.println(this.name + "가 야옹하고 웁니다");
     }
-
 }
