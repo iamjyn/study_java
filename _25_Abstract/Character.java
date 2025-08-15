@@ -8,7 +8,7 @@ public abstract class Character {
     Character ch2 = new Character("기본캐릭") (x)
     추상 메서드:
     메서드에 시그니처만 작성. 구체적인 구현부가 존재하지 않음.
-    추상클래스를 상속받는 클래스는 반드시 추상 메서드를 구현(오버라이딩)해야 한다. (강제)
+    추상클래스를 상속받는 클래스는 반드시 추상 메서드를 구현(오버라이딩)해야 한다.(강제)
     */
 
     protected String name;

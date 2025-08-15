@@ -4,7 +4,7 @@ public class Archer extends Character{
     /*
     생성자
     attack
-    main에 테스트 코드 -> HP상태 확인
+    main에 테스트 코드 -> HP 상태 확인
     */
 
     public Archer(String name) {

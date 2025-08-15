@@ -25,19 +25,25 @@
 
 ## 객체 지향 설계 5원칙(SOLID)
 
-1. SRP(Single Responsibility Principle) - 단일책임원리
+1. SRP(Single Responsibility Principle) - 단일 책임 원칙
 : 각 클래스는 하나의 "책임"만 수행하도록 설계하라
 *책임: 개발자의 주관적 기준
 
-2. OCP(Open Closed Principle) - 개방폐쇄원칙
+2. OCP(Open Closed Principle) - 개방 폐쇄 원칙
 : 확장에는 열려있고, 수정에는 닫혀 있어야 한다.
 -> 새로운 기능이 추가될 때는, 기존코드는 간섭받지 않아야 한다.
 
-3. Interface Segregation Principle - 인터페이스 분리 원칙
+3. Liskov Substitution Principle - 리스코프 치환 원칙
+: 자식 클래스는 부모 클래스의 자리를 대체할 수 있어야 한다
+-> 상속받은 자식 클래스는 부모 클래스가 동작하는 모든 자리에 문제 없이 들어갈 수 있어야 함
+즉, 부모 타입으로 자식을 참조했을 때, 프로그램의 동작이 깨지면 안 됨
+상속의 목적이 "is-a" 관계를 표현하는 것이므로, 자식은 부모의 행위를 위반하지 않아야 함
+
+4. Interface Segregation Principle - 인터페이스 분리 원칙
 : 구현체는 자신이 사용하지 않는 메서드에 의존하면 안된다.
 -> 필요한 기능끼리 "적절히" 분리해서 나눈 뒤, 다중상속으로 조합해서 사용하자.
 
-4. DIP(Dependency Inversion Principle) - 의존성 역전 원칙
+5. DIP(Dependency Inversion Principle) - 의존성 역전 원칙
 : 추상체는 구체적인 것에 의존하면 안된다.
 -> 구체적인 것이 추상체에 의존해야 한다.
 
