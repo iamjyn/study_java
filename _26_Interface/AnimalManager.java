@@ -18,9 +18,9 @@ public class AnimalManager {
     [Dog] -> [Animal, Swimmable] <- [AnimalManager]
 
     객체 지향 설계 5원칙(SOLID)
-    DIP(Dependency Inversion Principle) - 의존성 역전 원칙
-    : 추상체는 구체적인 것에 의존하면 안된다.
-    구체적인 것이 추상체에 의존해야 한다.
+    5. DIP(Dependency Inversion Principle) - 의존성 역전 원칙
+    - 추상체는 구체적인 것에 의존하면 안된다.
+    - 구체적인 것이 추상체에 의존해야 한다.
 
     장점
     - 확장이 쉽다(새로운 동물이 나와도, AnimalManger는 추가코드 x)
@@ -28,7 +28,7 @@ public class AnimalManager {
     */
 
     public void makeSound(Animal animal) {
-        // 강제로 sound 메서드 구현이 보장됨(문법 강제)
+        // sound 메서드 구현이 보장됨(문법 강제)
         // -> 강제로 다형성이 구현
         animal.sound();
     }
