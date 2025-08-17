@@ -25,6 +25,6 @@ public class CardPayment implements PaymentMethod {
 
     @Override
     public String getPaymentName() {
-        return "";
+        return "신용카드";
     }
 }

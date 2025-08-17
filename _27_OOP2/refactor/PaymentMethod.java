@@ -5,6 +5,7 @@ public interface PaymentMethod {
     // public static final 생략가능
     String CARD_PAYMENT = "CARD";
     String CASH_PAYMENT = "CASH";
+    String NAVER_PAYMENT = "NAVER";
 
     // 결제 성공시 true, 실패시 false
     // null 체크, 입력갑 검증 제외

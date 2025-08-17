@@ -27,8 +27,5 @@ public class Main1 {
         // 소규모 개발시 ? 인터페이스...?
         processPayment("CARD", 20000);
 
-
-
-
     }
 }
