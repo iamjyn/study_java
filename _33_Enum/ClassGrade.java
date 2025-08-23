@@ -21,8 +21,6 @@ public class ClassGrade {
     public static final ClassGrade GOLD = new ClassGrade(20);
     public static final ClassGrade DIAMOND = new ClassGrade(30);
 
-
-
     // 생성자를 private로 막아준다.
     private ClassGrade(int discountPercent) {
         this.discountPercent = discountPercent;

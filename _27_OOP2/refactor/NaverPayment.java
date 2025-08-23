@@ -24,7 +24,7 @@ public class NaverPayment implements PaymentMethod {
             return false;
         }
 
-        System.out.println("이메일 주소: " + email);
+        System.out.println(email + ": " + amount + "원 결제 완료");
         return true;
     }
 

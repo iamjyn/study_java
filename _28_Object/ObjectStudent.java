@@ -53,7 +53,7 @@ public class ObjectStudent {
     return (this == obj) // 객체의 heap 주소 비교(stack 값)
     동등성(논리적으로 같냐) -> String이 하나의 구현 예시
 
-    1. 메모리 따질 땐 -> == 연사낮 사용
+    1. 메모리 따질 땐 -> == 연산자 사용
     2. 논리적으로 따질 땐 -> equals() 오버라이딩 하자
 
     - 규약 (참고만)
