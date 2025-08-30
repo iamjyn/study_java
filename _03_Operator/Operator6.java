@@ -24,7 +24,7 @@ public class Operator6 {
         int height = 119;
         int age = 25;
         // 키가 120이하더라도, 성인이면 탑승 가능
-        // 삼항연산자 또하 연산자이기 때문에 중첩이 가능하다.
+        // 삼항연산자 또한 연산자이기 때문에 중첩이 가능하다.
         // 권장) 한번 이상 중첩하지 말자
         String result = height >= 120 ? "탑승 가능" : age >= 20 ? "탑승 가능" : "탑승 불가능";
         System.out.println(result);

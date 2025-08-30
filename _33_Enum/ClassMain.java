@@ -23,13 +23,13 @@ public class ClassMain {
     public static void main(String[] args) {
         int price = 100000;
 
-        int basic = discount(10000, ClassGrade.BASIC);
-        int gold = discount(10000, ClassGrade.GOLD);
-        int diamond = discount(10000, ClassGrade.DIAMOND);
+        int basic = discount(price, ClassGrade.BASIC);
+        int gold = discount(price, ClassGrade.GOLD);
+        int diamond = discount(price, ClassGrade.DIAMOND);
 
         // discount 함수가 클래스 ClassGrade 객체를 매개변수로 받게 됨
         // -> 이전 상수도입과는 다르게,
-        // discount(price, "VVIP")같은 매직스트링을 강제로 방지할 수 있다.(컴파일 시점에)
+        // discount(price, "VVIP")같은 매직스트링을 강제로 방지할 수 있다.(컴파일시점에)
         // ClassGrade myGrade = new ClassGrade(); 생성자를 private로 막아놔서
         // 미리 선언 해놓은 인스턴스만 사용가능(타입 안정)
     }

@@ -21,8 +21,8 @@ public class Main {
         // Arrays.deepToString(): 값이 나올 때까지 까서 본다
 
         // 2. 비교 (for문)
-        Integer maxScore = scores[0];
-        Integer minScore = scores[0];
+        Integer maxScore = scores[0]; // 초기화
+        Integer minScore = scores[0]; // 초기화
 
         // 최종 최고점, 최저점 Integer 메서드를 사용해서 구하시오!
         for (int i = 1; i < scores.length; i++) {
@@ -31,17 +31,6 @@ public class Main {
         }
         System.out.println("최고점: " + maxScore);
         System.out.println("최저점: " + minScore);
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

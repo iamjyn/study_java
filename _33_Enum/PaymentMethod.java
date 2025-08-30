@@ -24,5 +24,4 @@ public enum PaymentMethod {
         return price * this.feeRate / 100;
     }
 
-
 }

@@ -3,9 +3,9 @@ package com.study._32_Builder;
 public class Main {
     public static void main(String[] args) {
         Member member = Member.builder()
-                .name("홍길동")
-                .age(20)
                 .email("java@naver.com")
+                .age(20)
+                .name("홍길동")
                 .build();
 
         LombokMember member1
@@ -13,9 +13,9 @@ public class Main {
         System.out.println(member1);
 
         LombokMember member2 = LombokMember.builder()
-                .name("김길동")
                 .age(20)
                 .email("java@lombok.com")
+                .name("김길동")
                 .build();
     }
 }

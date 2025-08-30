@@ -28,8 +28,8 @@ public class LogManager {
         return instance; // 그 다음 호출부터, 이전에 생성했던 instance 그대로 반환
     }
 
-    public  void log(String msg) {
-        System.out.println("log" + msg);
+    public void log(String msg) {
+        System.out.println("log: " + msg);
     }
 
 }

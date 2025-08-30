@@ -12,7 +12,7 @@ public class WrapperMain {
 
         2. null 값을 가질 수 없다.
         int 자료형은 초기화하지 않으면 기본값: 0
-        int[] score = {1, 10,5, 0, 0}
+        int[] score = {1, 10, 5, 0, 0}
         index가 3,4자리가 존재하는 0은 과연 기본값인지 초기화한건지
         구분이 안됨 -> 의도적으로 0으로 값을 가져온건지 아닌지 구분 x
 
@@ -34,7 +34,7 @@ public class WrapperMain {
         Boolean boxedBoolean = Boolean.valueOf(true);
 
         // 래퍼클래스 -> 원시자료형(언박싱)
-        int unBoxedInt = boxedScore1.intValue();
+        int unBoxedInt = boxedScore1.intValue(); // .intValue() -> getter 역할
         long unBoxedLong = boxedLong.longValue();
         double unBoxedDouble = boxedDouble.doubleValue();
         boolean unBoxedBoolean = boxedBoolean.booleanValue();
@@ -62,7 +62,7 @@ public class WrapperMain {
         System.out.println(num1 == num2); // 주소가 같아서 true
         /*
         Integer 클래스는 객체를 캐싱한다.
-        - 128 ~ 127 : 총 256개의 객체를 미리 만들어 놓는다.
+        -128 ~ 127 : 총 256개의 객체를 미리 만들어 놓는다.
 
         - 256개의 객체는 각각 하나씩 존재한다.
         - 256개의 객체는 새로 생성되지 않는다.
@@ -78,16 +78,21 @@ public class WrapperMain {
         // 2. 문자열 -> 숫자
         Integer number = Integer.valueOf("456"); // "456" -> 456 (객체)
         int parsingNum = Integer.parseInt("123"); // "123" -> 123 (int 원시자료형)
+        System.out.println(number);
+        System.out.println(parsingNum);
 
         // 3. 비교메서드
-        int result = num.compareTo(50);
+        int result = num.compareTo(0);
         // 객체보다 값이 크면 1, 작으면 -1, 동등하면 0 리턴
         // if (result > 0), (result < 0), (result == 0)
+        System.out.println(result);
 
         // 4. 유틸리티 메서드
         // 두 값을 비교해서 큰값 리턴 혹은 작은값 리턴
         int max = Integer.max(10, 20); // 20
         int min = Integer.min(10, 20); // 10
+        System.out.println(max);
+        System.out.println(min);
 
     }
 }

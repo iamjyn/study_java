@@ -8,12 +8,10 @@ public class ExceptionMain {
 
     static void method2() {
         System.out.println("method2에서 만든 예외");
-        throw new RuntimeException("method2에서 만든 예외");
+        throw new RuntimeException("method2예외");
     }
 
-
     public static void main(String[] args) {
-
         /*
         - 예외(에러)처리의 목적
         1. 프로그램 비정상 종료 방지
@@ -43,11 +41,12 @@ public class ExceptionMain {
         catch가 없다면, 프로그램 이상 종료 및 콘솔창에 에러가 기록
         */
 
-        try {
+        try { // 전파된 에러를 잡음(method2 -> method1 -> main)
             method1();
             System.out.println("예외가 발생하면 이 코드는 실행되지 않아요.");
             /*
-            예외객체 생성 -> 1. 코드 진행이 즉각 중단 됨
+            예외객체 생성 ->
+            1. 코드 진행이 즉각 중단 됨
             2. JVM이 try-catch 코드를 탐색
             3. 호출 스택을 거슬러 따라가면서 try-catch를 탐색
             4. 없다면, JVM이 예외를 출력하고 프로그램을 종료

@@ -22,4 +22,5 @@ public enum Grade {
     public int discount(int price) {
         return price * this.discountRate / 100;
     }
+
 }

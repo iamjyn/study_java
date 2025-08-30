@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         /*
         익명 클래스:
-        - 이름이 없는 캘르스
+        - 이름이 없는 클래스
         - 클래스 정의와 동시에 인스턴스 생성
         => 한번 쓰고 버릴 객체(재사용 하지 않음)
         - 인터페이스, 추상클래스를 구현할 때

@@ -30,8 +30,4 @@ public class ClassGrade {
         return discountPercent;
     }
 
-
-
-
-
 }

@@ -3,7 +3,7 @@ package com.study._32_Builder;
 public class Member {
     /*
     빌더패턴
-    필드가 많을때(20개 넘어갈 때)
+    필드가 많을 때(20개 넘어갈 때)
     1. 생성자 오버로딩을 많이 해줘야 함.
     2. 내가 원하는 필드만 초기화 하려면 오버로딩 해줘야 함.
     3. 생성자 시그니처가 겹치는 경우가 많음
@@ -54,11 +54,6 @@ public class Member {
         public Member build() {
             return new Member(this);
         }
-
-
-
-
     }
-
 
 }

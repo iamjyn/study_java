@@ -17,7 +17,7 @@ public class Main {
         String goldName = Grade.GOLD.name();
         System.out.println(goldName); // "GOLD"
 
-        // DB에서 가져온 데이터(String) -> Enum으로 변환
+        // DB에서 가져온 데이터(String) -> Enum으로 변환(Enum은 자바에만 있음)
         /*
         public class DBUser {
             private String grade;

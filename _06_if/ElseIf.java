@@ -20,7 +20,7 @@ public class ElseIf {
 
         if (age <= 7) {
             // if문은 중첩 가능하다.
-            // 권장) if문은 중첩은 2~3중을 최대로 생각하자.
+            // 권장) if문 중첩은 2~3중을 최대로 생각하자.
             if (age < 0) {
                 System.out.println("나이는 음수일 수 없습니다.");
             } else {
